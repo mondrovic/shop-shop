@@ -3,7 +3,7 @@ import {
   UPDATE_CATEGORIES,
   UPDATE_CURRENT_CATEGORIES,
 } from "./actions";
-import { userReducer } from "react";
+import { useReducer } from "react";
 
 export const reducer = (state, action) => {
   switch (action.type) {
