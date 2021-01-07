@@ -1,7 +1,6 @@
 import React, { createContext, useContext } from "react";
 import { useProductReducer } from "./reducers";
 
-// instantiate global object
 const StoreContext = createContext();
 const { Provider } = StoreContext;
 
@@ -11,8 +10,6 @@ const StoreProvider = ({ value = [], ...props }) => {
     categories: [],
     currentCategory: "",
   });
-
-  // confirmation
   console.log(state);
   return <Provider value={[state, dispatch]} {...props} />;
 };
